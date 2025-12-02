@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="hew_mobile">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/hew_appicon2.png" />
+
+  <title>HEW Apps</title>
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Viewport untuk mengunci lebar -->
+  <meta content="width=420, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background-color: #313131; /* warna pinggiran */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    #flutter_container {
+      width: 450px; /* lebar maksimum tampilan app */
+      max-width: 100%; /* Pastikan tidak melebihi layar */
+      border-radius: 8px;
+      overflow: hidden;
+      background-color: #155137; /* warna isi aplikasi */
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    }
+  </style>
+
+  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app-compat.js" defer></script>
+  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-messaging-compat.js" defer></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+  <script defer>
+    // Konfigurasi Firebase untuk Web
+    const firebaseConfig = {
+      apiKey: "AIzaSyCb8MmxSouixR8IUfxMCMEp7ijl46Rn4Ak",
+      authDomain: "hew-apps.firebaseapp.com",
+      projectId: "hew-apps",
+      storageBucket: "hew-apps.firebasestorage.app",
+      messagingSenderId: "65409210693",
+      appId: "1:65409210693:web:53b298a88df1d3cbdfc62c",
+      measurementId: "G-5ZX1DDTVJN"
+    };
+
+    // Inisialisasi Firebase
+    firebase.initializeApp(firebaseConfig);
+
+    // Minta izin notifikasi
+    const messaging = firebase.messaging();
+
+    // Minta izin untuk notifikasi
+    messaging
+      .getToken({ vapidKey: "BHHW6kwqtiycaq8ND829K_MMXR7LyZHfaF-n8k6aVEj0RpGxcRQqt_g2Iad7lLDGSwUUZSVq1eQgWHmk3yZcD64" })
+      .then((currentToken) => {
+        if (currentToken) {
+          window.localStorage.setItem("fcm_token", currentToken);
+        } else {
+          console.log("Tidak dapat mendapatkan token FCM.");
+        }
+    })
+    .catch((err) => {
+      console.log("Error mendapatkan token FCM: ", err);
+    });
+
+    // Registrasi Service Worker untuk FCM
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/firebase-messaging-sw.js')
+        .then((registration) => {
+          console.log("Service Worker registered:", registration);
+        })
+        .catch((err) => {
+          console.error("Service Worker registration failed:", err);
+        });
+    }
+  </script>
+  <script src="flutter_bootstrap.js" async=""></script>
+</head>
+<body>
+  <div id="flutter_container"></div>
+  <script>
+    navigator.mediaDevices
+        .getUserMedia({ video: true })
+        .then((stream) => console.log("Camera ready"))
+        .catch((err) => console.warn("Camera error:", err));
+  </script>
+</body>
+</html>
