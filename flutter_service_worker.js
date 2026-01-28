@@ -39,7 +39,7 @@ const RESOURCES = {"assets/AssetManifest.bin": "8e1e824e6c596c02519bc9440cd9ee52
 "assets/assets/icon_hx_menu/remunerasi.png": "1f3127d87db8f7862b3152aa16645fdb",
 "assets/assets/todolist.png": "00d90879aead33346cb42ca3398bf467",
 "assets/FontManifest.json": "7b2a36307916a9721811788013e65289",
-"assets/fonts/MaterialIcons-Regular.otf": "497d932291b2b1d1508dd40eda4cddb5",
+"assets/fonts/MaterialIcons-Regular.otf": "9f5128e67424153d7e4e15a626ada2bf",
 "assets/NOTICES": "bca6b0c2a66c0572c78d50cc36fc9404",
 "assets/packages/awesome_dialog/assets/flare/error.flr": "e3b124665e57682dab45f4ee8a16b3c9",
 "assets/packages/awesome_dialog/assets/flare/info.flr": "bc654ba9a96055d7309f0922746fe7a7",
@@ -79,11 +79,11 @@ const RESOURCES = {"assets/AssetManifest.bin": "8e1e824e6c596c02519bc9440cd9ee52
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "firebase-messaging-sw.js": "f4ff3dd9fac0e6a77d77361632442e5c",
 "flutter.js": "24bc71911b75b5f8135c949e27a2984e",
-"flutter_bootstrap.js": "5d28b486a6b0c5a68c88c42a8e279a9a",
+"flutter_bootstrap.js": "b490b63fda9b236f29e1a062c34c3323",
 "icons/hew_appicon2.png": "91603c5a042abe4e65503463396194c3",
 "index.html": "170f37855c80597b766a0d32f65433ca",
 "/": "170f37855c80597b766a0d32f65433ca",
-"main.dart.js": "ef108b13f79e85c3bd70e5629f8bf52f",
+"main.dart.js": "825d8e2c449949cea62abb8bddb37840",
 "manifest.json": "d38f637be079ccea5f95547aff35715a",
 "version.json": "e46a7480288321435ca4938aaed489bf"};
 // The application shell files that are downloaded before a service worker can
