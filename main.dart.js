@@ -134707,7 +134707,7 @@ case 2:return A.C(o.at(-1),r)}})
 return A.E($async$h3,r)},
 X(){this.a0()
 this.h3()},
-D(a){var s,r,q,p,o,n,m=this,l=null,k=m.d,j=t.p,i=A.bh(l,k,l,0,l,new A.aK(l,l,l,l,l,B.c,l,l,l),A.M(A.a([A.e("Riwayat Cuti",l,l,l,l,A.f(l,l,A.w(4294967295),l,l,l,l,l,l,l,l,16,l,l,B.r,l,l,!0,l,l,l,l,l,l,l,l),l,l,l),new A.bi(1,l),new A.Q(B.P,A.aF("assets/hew.png",l,B.c,l,l,35,l,l),l)],j),B.i,B.e,B.f,0,l))
+D(a){var s,r,q,p,o,n,m=this,l=null,k=m.d,j=t.p,i=A.bh(l,k,l,0,l,new A.aK(l,l,l,l,l,B.c,l,l,l),A.M(A.a([A.e(m.a.c,l,l,l,l,A.f(l,l,A.w(4294967295),l,l,l,l,l,l,l,l,16,l,l,B.r,l,l,!0,l,l,l,l,l,l,l,l),l,l,l),new A.bi(1,l),new A.Q(B.P,A.aF("assets/hew.png",l,B.c,l,l,35,l,l),l)],j),B.i,B.e,B.f,0,l))
 k=A.a([m.f,k],t.t_)
 s=A.y(16)
 r=B.h.V(25.5)
@@ -134841,10 +134841,18 @@ A.b1P.prototype={
 $0(){return A.S(t.N,t.z)},
 $S:44}
 A.b1T.prototype={
-$2(a,b){var s=null,r=this.a.w[b],q=A.y(12),p=A.a([new A.aA(0,B.D,A.Y(38,B.n.k()>>>16&255,B.n.k()>>>8&255,B.n.k()&255),new A.j(0,2),6)],t.E),o=J.ah(r),n=t.p,m=A.a([A.a3(A.e(A.i(o.h(r,"keterangan")),s,s,s,s,A.f(s,s,s,s,s,s,s,s,s,s,s,13,s,s,B.y,s,s,!0,s,s,s,s,s,s,s,s),s,s,s),1)],n)
-if(J.r(o.h(r,"status_pembatalan"))==="1")m.push(new A.Q(B.C7,A.e("Menunggu Pembatalan",s,s,s,s,A.f(s,s,B.af,s,s,s,s,s,s,s,s,13,s,s,B.m,s,s,!0,s,s,s,s,s,s,s,s),s,s,s),s))
-m=A.M(m,B.i,B.e,B.f,0,s)
-return A.N(s,A.eJ(!1,new A.v(16,8,16,8),s,s,!0,s,s,!0,s,s,s,s,s,!1,s,s,s,s,A.z(A.a([new A.x(s,8,s,s),A.e(A.i(o.h(r,"mulai"))+" s/d "+A.i(o.h(r,"selesai")),s,s,s,s,A.f(s,s,B.Q,s,s,s,s,s,s,s,s,13,s,s,B.m,s,s,!0,s,s,s,s,s,s,s,s),s,s,s),A.e("Durasi: "+A.i(o.h(r,"durasi"))+" hari",s,s,s,s,A.f(s,s,B.Q,s,s,s,s,s,s,s,s,13,s,s,B.m,s,s,!0,s,s,s,s,s,s,s,s),s,s,s),A.e("Tanggal masuk: "+A.i(o.h(r,"selesai")),s,s,s,s,A.f(s,s,B.Q,s,s,s,s,s,s,s,s,13,s,s,B.m,s,s,!0,s,s,s,s,s,s,s,s),s,s,s)],n),B.t,B.e,B.f,B.k),s,m,s,s,s,s),B.l,s,s,new A.T(B.c,s,s,q,p,s,B.o),s,s,s,new A.v(0,0,0,12),s,s,s,s)},
+$2(a,b){var s,r,q=null,p=this.a.w[b],o=A.y(12),n=A.a([new A.aA(0,B.D,A.Y(38,B.n.k()>>>16&255,B.n.k()>>>8&255,B.n.k()&255),new A.j(0,2),6)],t.E),m=J.ah(p),l=m.h(p,"keterangan"),k=t.p
+l=A.a([A.a3(A.e(A.i(l==null?"-":l),q,q,q,q,A.f(q,q,q,q,q,q,q,q,q,q,q,13,q,q,B.y,q,q,!0,q,q,q,q,q,q,q,q),q,q,q),1)],k)
+if(J.r(m.h(p,"status_pembatalan"))==="1")l.push(new A.Q(B.C7,A.e("Menunggu Pembatalan",q,q,q,q,A.f(q,q,B.af,q,q,q,q,q,q,q,q,13,q,q,B.m,q,q,!0,q,q,q,q,q,q,q,q),q,q,q),q))
+l=A.M(l,B.i,B.e,B.f,0,q)
+s=m.h(p,"mulai")
+s=A.i(s==null?"-":s)
+r=m.h(p,"selesai")
+s=A.e(s+" s/d "+A.i(r==null?"-":r),q,q,q,q,A.f(q,q,B.Q,q,q,q,q,q,q,q,q,13,q,q,B.m,q,q,!0,q,q,q,q,q,q,q,q),q,q,q)
+r=m.h(p,"durasi")
+r=A.e("Durasi: "+A.i(r==null?"-":r)+" hari",q,q,q,q,A.f(q,q,B.Q,q,q,q,q,q,q,q,q,13,q,q,B.m,q,q,!0,q,q,q,q,q,q,q,q),q,q,q)
+m=m.h(p,"tanggal_masuk")
+return A.N(q,A.eJ(!1,new A.v(16,8,16,8),q,q,!0,q,q,!0,q,q,q,q,q,!1,q,q,q,q,A.z(A.a([new A.x(q,8,q,q),s,r,A.e("Tanggal masuk: "+A.i(m==null?"-":m),q,q,q,q,A.f(q,q,B.Q,q,q,q,q,q,q,q,q,13,q,q,B.m,q,q,!0,q,q,q,q,q,q,q,q),q,q,q)],k),B.t,B.e,B.f,B.k),q,l,q,q,q,q),B.l,q,q,new A.T(B.c,q,q,o,n,q,B.o),q,q,q,new A.v(0,0,0,12),q,q,q,q)},
 $S:94}
 A.Nr.prototype={
 N(){var s=null,r=t.N,q=t.z
@@ -136054,10 +136062,18 @@ A.b_O.prototype={
 $0(){return A.S(t.N,t.z)},
 $S:44}
 A.b_S.prototype={
-$2(a,b){var s=null,r=this.a.w[b],q=A.y(12),p=A.a([new A.aA(0,B.D,A.Y(38,B.n.k()>>>16&255,B.n.k()>>>8&255,B.n.k()&255),new A.j(0,2),6)],t.E),o=J.ah(r),n=t.p,m=A.a([A.a3(A.e(A.i(o.h(r,"keterangan")),s,s,s,s,A.f(s,s,s,s,s,s,s,s,s,s,s,13,s,s,B.y,s,s,!0,s,s,s,s,s,s,s,s),s,s,s),1)],n)
-if(J.r(o.h(r,"status_pembatalan"))==="1")m.push(new A.Q(B.C7,A.e("Menunggu Pembatalan",s,s,s,s,A.f(s,s,B.af,s,s,s,s,s,s,s,s,13,s,s,B.m,s,s,!0,s,s,s,s,s,s,s,s),s,s,s),s))
-m=A.M(m,B.i,B.e,B.f,0,s)
-return A.N(s,A.eJ(!1,new A.v(16,8,16,8),s,s,!0,s,s,!0,s,s,s,s,s,!1,s,s,s,s,A.z(A.a([new A.x(s,8,s,s),A.e(A.i(o.h(r,"mulai"))+" s/d "+A.i(o.h(r,"selesai")),s,s,s,s,A.f(s,s,B.Q,s,s,s,s,s,s,s,s,13,s,s,B.m,s,s,!0,s,s,s,s,s,s,s,s),s,s,s),A.e("Durasi: "+A.i(o.h(r,"durasi"))+" hari",s,s,s,s,A.f(s,s,B.Q,s,s,s,s,s,s,s,s,13,s,s,B.m,s,s,!0,s,s,s,s,s,s,s,s),s,s,s),A.e("Tanggal masuk: "+A.i(o.h(r,"selesai")),s,s,s,s,A.f(s,s,B.Q,s,s,s,s,s,s,s,s,13,s,s,B.m,s,s,!0,s,s,s,s,s,s,s,s),s,s,s)],n),B.t,B.e,B.f,B.k),s,m,s,s,s,s),B.l,s,s,new A.T(B.c,s,s,q,p,s,B.o),s,s,s,new A.v(0,0,0,12),s,s,s,s)},
+$2(a,b){var s,r,q=null,p=this.a.w[b],o=A.y(12),n=A.a([new A.aA(0,B.D,A.Y(38,B.n.k()>>>16&255,B.n.k()>>>8&255,B.n.k()&255),new A.j(0,2),6)],t.E),m=J.ah(p),l=m.h(p,"keterangan"),k=t.p
+l=A.a([A.a3(A.e(A.i(l==null?"-":l),q,q,q,q,A.f(q,q,q,q,q,q,q,q,q,q,q,13,q,q,B.y,q,q,!0,q,q,q,q,q,q,q,q),q,q,q),1)],k)
+if(J.r(m.h(p,"status_pembatalan"))==="1")l.push(new A.Q(B.C7,A.e("Menunggu Pembatalan",q,q,q,q,A.f(q,q,B.af,q,q,q,q,q,q,q,q,13,q,q,B.m,q,q,!0,q,q,q,q,q,q,q,q),q,q,q),q))
+l=A.M(l,B.i,B.e,B.f,0,q)
+s=m.h(p,"mulai")
+s=A.i(s==null?"-":s)
+r=m.h(p,"selesai")
+s=A.e(s+" s/d "+A.i(r==null?"-":r),q,q,q,q,A.f(q,q,B.Q,q,q,q,q,q,q,q,q,13,q,q,B.m,q,q,!0,q,q,q,q,q,q,q,q),q,q,q)
+r=m.h(p,"durasi")
+r=A.e("Durasi: "+A.i(r==null?"-":r)+" hari",q,q,q,q,A.f(q,q,B.Q,q,q,q,q,q,q,q,q,13,q,q,B.m,q,q,!0,q,q,q,q,q,q,q,q),q,q,q)
+m=m.h(p,"tanggal_masuk")
+return A.N(q,A.eJ(!1,new A.v(16,8,16,8),q,q,!0,q,q,!0,q,q,q,q,q,!1,q,q,q,q,A.z(A.a([new A.x(q,8,q,q),s,r,A.e("Tanggal masuk: "+A.i(m==null?"-":m),q,q,q,q,A.f(q,q,B.Q,q,q,q,q,q,q,q,q,13,q,q,B.m,q,q,!0,q,q,q,q,q,q,q,q),q,q,q)],k),B.t,B.e,B.f,B.k),q,l,q,q,q,q),B.l,q,q,new A.T(B.c,q,q,o,n,q,B.o),q,q,q,new A.v(0,0,0,12),q,q,q,q)},
 $S:94}
 A.NA.prototype={
 N(){return new A.ah1(A.w(4279587127),A.w(4293914607))}}
