@@ -130253,7 +130253,7 @@ case 2:return"Dalam Antrian"
 case 3:return"Pelaksanaan"
 case 4:return"Verifikasi User"
 case 5:return"Selesai"
-case 99:return"Ditolak"
+case 99:return"Dibatalkan"
 default:return a}},
 jh(a){switch(a){case"1":return B.ox
 case"2":return B.c_
@@ -131043,7 +131043,7 @@ this.ex()}}
 A.ww.prototype={}
 A.Nr.prototype={
 N(){var s=t.hV,r=t.N,q=t.s
-return new A.X6(A.k(4279587127),A.k(4293914607),A.be(null),A.a([],s),A.a([],s),A.X(r,t.GU),A.X(r,r),A.a(["Semua Departemen"],q),A.a(["Semua Pelaksana"],q),A.a(["Semua Bulan","Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember"],q),A.a(["Semua Status","Diajukan","Dalam Antrian","Pelaksanaan","Verifikasi User","Selesai","Ditolak"],q),null,null)}}
+return new A.X6(A.k(4279587127),A.k(4293914607),A.be(null),A.a([],s),A.a([],s),A.X(r,t.GU),A.X(r,r),A.a(["Semua Departemen"],q),A.a(["Semua Pelaksana"],q),A.a(["Semua Bulan","Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember"],q),A.a(["Semua Status","Diajukan","Dalam Antrian","Pelaksanaan","Verifikasi User","Selesai","Dibatalkan"],q),null,null)}}
 A.X6.prototype={
 a8m(a){var s=A.cH(a,null)
 switch(s==null?-1:s){case 1:return"Diajukan"
@@ -131051,7 +131051,7 @@ case 2:return"Dalam Antrian"
 case 3:return"Pelaksanaan"
 case 4:return"Verifikasi User"
 case 5:return"Selesai"
-case 99:return"Ditolak"
+case 99:return"Dibatalkan"
 default:return a}},
 jh(a){switch(a){case"1":return B.ox
 case"2":return B.c_
@@ -131699,7 +131699,7 @@ r=i.fy
 if(r==null)r="\u2014"
 return new A.ox([A.k(l),A.k(k),"Job Order telah diverifikasi selesai oleh "+A.h(s)+". Catatan: "+r,A.k(j)])}if(s===99){s=i.go
 if(s==null)s="\u2014"
-return new A.ox([A.k(4290624957),A.k(4280361249),"Job Order ditolak. Alasan: "+s,A.k(4282532418)])}return null},
+return new A.ox([A.k(4290624957),A.k(4280361249),"Job Order dibatalkan. Alasan: "+s,A.k(4282532418)])}return null},
 B(a3){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c=this,b=null,a=4290624957,a0=4293849838,a1=A.k(4294112754),a2=c.aBB()
 if(c.w)s=A.a_(A.bv(b,B.u,b,b,b,b,b,b,b,b),b,b)
 else{s=c.r
@@ -131708,7 +131708,7 @@ else{r=s.z
 q=r===99
 p=A.a([B.u,B.cM],t.O)
 o=A.d(s.a,b,b,b,b,b,A.e(b,b,B.b,b,b,b,b,b,b,b,b,16,b,b,B.cc,b,b,!0,b,b,b,b,b,b,b,b),b,b,b)
-n=A.p([0,"Dibuat",1,"Diajukan",2,"Dalam Antrian",3,"Pelaksanaan",4,"Verifikasi User",5,"Selesai",99,"Ditolak"],t.S,t.N)
+n=A.p([0,"Dibuat",1,"Diajukan",2,"Dalam Antrian",3,"Pelaksanaan",4,"Verifikasi User",5,"Selesai",99,"Dibatalkan"],t.S,t.N)
 if(q)m=B.p
 else if(r===0)m=B.aO
 else{if(r===1)l=B.ox
@@ -131730,7 +131730,7 @@ o=A.J(217,o.j()>>>16&255,o.j()>>>8&255,o.j()&255)
 l=A.l(10)
 j=A.k(4282532418)
 j=A.av(A.J(204,j.j()>>>16&255,j.j()>>>8&255,j.j()&255),-1,B.t,1)
-k.push(A.m(b,A.F(A.a([A.L(B.h1,A.k(a),b,18),new A.y(8,b,b,b),A.d("Job Order ini telah ditolak",b,b,b,b,b,A.e(b,b,A.k(a),b,b,b,b,b,b,b,b,12,b,b,B.y,b,b,!0,b,b,b,b,b,b,b,b),b,b,b)],g),B.h,B.d,B.c,0,b),B.i,b,b,new A.t(o,b,j,l,b,b,B.m),b,b,b,b,new A.x(12,8,12,8),b,b,b))}if(r===3&&s.dx===1){s=c.fr.a
+k.push(A.m(b,A.F(A.a([A.L(B.h1,A.k(a),b,18),new A.y(8,b,b,b),A.d("Job Order ini telah dibatalkan",b,b,b,b,b,A.e(b,b,A.k(a),b,b,b,b,b,b,b,b,12,b,b,B.y,b,b,!0,b,b,b,b,b,b,b,b),b,b,b)],g),B.h,B.d,B.c,0,b),B.i,b,b,new A.t(o,b,j,l,b,b,B.m),b,b,b,b,new A.x(12,8,12,8),b,b,b))}if(r===3&&s.dx===1){s=c.fr.a
 f=B.l.bo(B.f.k(B.f.ba(s,36e8)),2,"0")
 e=B.l.bo(B.f.k(B.f.aO(B.f.ba(s,6e7),60)),2,"0")
 d=B.l.bo(B.f.k(B.f.aO(B.f.ba(s,1e6),60)),2,"0")
@@ -131799,17 +131799,19 @@ e=f===1
 s=e&&h.z==="4"&&h.Q==="10"
 r=e&&h.z==="4"&&h.Q==="10"
 e=f===2
-q=e&&a.dx===0&&h.z==="6"&&h.Q==="10"
-p=!1
+q=!1
+if(e)if(a.dx===0){p=h.z
+p=(p==="4"||p==="6")&&h.Q==="10"
+q=p}o=!1
 if(e)if(a.dx===1){e=a.cx
 e=e==null?g:new A.I(A.a(e.split(", "),t.s),new A.bbO(),t.B).q(0,h.x)
 e=e===!0
-p=e}e=f===3
-o=!1
-if(e)if(a.dx===1){n=a.cx
-n=n==null?g:new A.I(A.a(n.split(", "),t.s),new A.bbP(),t.B).q(0,h.x)
-n=n===!0
-o=n}m=!1
+o=e}e=f===3
+n=!1
+if(e)if(a.dx===1){p=a.cx
+p=p==null?g:new A.I(A.a(p.split(", "),t.s),new A.bbP(),t.B).q(0,h.x)
+p=p===!0
+n=p}m=!1
 if(e)if(a.dx===2){e=a.cx
 e=e==null?g:new A.I(A.a(e.split(", "),t.s),new A.bbQ(),t.B).q(0,h.x)
 e=e===!0
@@ -131818,19 +131820,19 @@ f=h.c
 f.toString
 f=A.bz(f,g,t.l).w
 e=A.k(4293455592)
-n=A.a([new A.ar(0,B.F,A.J(15,B.p.j()>>>16&255,B.p.j()>>>8&255,B.p.j()&255),new A.n(0,-2),8)],t.E)
+p=A.a([new A.ar(0,B.F,A.J(15,B.p.j()>>>16&255,B.p.j()>>>8&255,B.p.j()&255),new A.n(0,-2),8)],t.E)
 k=t.p
 j=A.a([],k)
 if(d){i=A.l(12)
 B.e.G(j,A.a([A.V(A.bP(g,A.m(g,A.F(A.a([A.L(B.ly,B.b,g,17),new A.y(8,g,g,g),A.d("Ubah Job Order",g,g,g,g,g,A.e(g,g,B.b,g,g,g,g,g,g,g,g,13,g,g,B.r,g,g,!0,g,g,g,g,g,g,g,g),g,g,g)],k),B.h,B.A,B.c,0,g),B.i,g,g,new A.t(h.d,g,g,i,g,g,B.m),g,g,g,g,new A.x(0,13,0,13),g,g,g),B.x,!1,g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,new A.bbS(h,a),g,g,g,g,g,g,!1,B.a4),1)],k))}if(c){i=A.l(12)
 B.e.G(j,A.a([new A.y(6,g,g,g),A.V(A.bP(g,A.m(g,A.F(A.a([A.L(B.aj7,B.b,g,17),new A.y(8,g,g,g),A.d("Verifikasi",g,g,g,g,g,A.e(g,g,B.b,g,g,g,g,g,g,g,g,13,g,g,B.r,g,g,!0,g,g,g,g,g,g,g,g),g,g,g)],k),B.h,B.A,B.c,0,g),B.i,g,g,new A.t(B.bs,g,g,i,g,g,B.m),g,g,g,g,new A.x(0,13,0,13),g,g,g),B.x,!1,g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,new A.bbT(h,a),g,g,g,g,g,g,!1,B.a4),1)],k))}if(s){i=A.l(12)
 B.e.G(j,A.a([A.V(A.bP(g,A.m(g,A.F(A.a([A.L(B.ai9,B.b,g,17),new A.y(8,g,g,g),A.d("Terima",g,g,g,g,g,A.e(g,g,B.b,g,g,g,g,g,g,g,g,13,g,g,B.r,g,g,!0,g,g,g,g,g,g,g,g),g,g,g)],k),B.h,B.A,B.c,0,g),B.i,g,g,new A.t(B.a6,g,g,i,g,g,B.m),g,g,g,g,new A.x(0,13,0,13),g,g,g),B.x,!1,g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,new A.bbU(h,a),g,g,g,g,g,g,!1,B.a4),1)],k))}if(r){i=A.l(12)
-B.e.G(j,A.a([new A.y(6,g,g,g),A.V(A.bP(g,A.m(g,A.F(A.a([A.L(B.h1,B.b,g,17),new A.y(8,g,g,g),A.d("Tolak",g,g,g,g,g,A.e(g,g,B.b,g,g,g,g,g,g,g,g,13,g,g,B.r,g,g,!0,g,g,g,g,g,g,g,g),g,g,g)],k),B.h,B.A,B.c,0,g),B.i,g,g,new A.t(B.U,g,g,i,g,g,B.m),g,g,g,g,new A.x(0,13,0,13),g,g,g),B.x,!1,g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,new A.bbV(h,a),g,g,g,g,g,g,!1,B.a4),1)],k))}if(q){i=A.l(12)
-B.e.G(j,A.a([A.V(A.bP(g,A.m(g,A.F(A.a([A.L(B.aj4,B.b,g,17),new A.y(8,g,g,g),A.d("Penjadwalan",g,g,g,g,g,A.e(g,g,B.b,g,g,g,g,g,g,g,g,13,g,g,B.r,g,g,!0,g,g,g,g,g,g,g,g),g,g,g)],k),B.h,B.A,B.c,0,g),B.i,g,g,new A.t(B.ke,g,g,i,g,g,B.m),g,g,g,g,new A.x(0,13,0,13),g,g,g),B.x,!1,g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,new A.bbW(h,a),g,g,g,g,g,g,!1,B.a4),1)],k))}if(p){i=A.l(12)
-B.e.G(j,A.a([A.V(A.bP(g,A.m(g,A.F(A.a([A.L(B.ajp,B.b,g,17),new A.y(8,g,g,g),A.d("Mulai Kerja",g,g,g,g,g,A.e(g,g,B.b,g,g,g,g,g,g,g,g,13,g,g,B.r,g,g,!0,g,g,g,g,g,g,g,g),g,g,g)],k),B.h,B.A,B.c,0,g),B.i,g,g,new A.t(B.aO,g,g,i,g,g,B.m),g,g,g,g,new A.x(0,13,0,13),g,g,g),B.x,!1,g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,new A.bbX(h,a),g,g,g,g,g,g,!1,B.a4),1)],k))}if(o){i=A.l(12)
+B.e.G(j,A.a([new A.y(6,g,g,g),A.V(A.bP(g,A.m(g,A.F(A.a([A.L(B.h1,B.b,g,17),new A.y(8,g,g,g),A.d("Batalkan",g,g,g,g,g,A.e(g,g,B.b,g,g,g,g,g,g,g,g,13,g,g,B.r,g,g,!0,g,g,g,g,g,g,g,g),g,g,g)],k),B.h,B.A,B.c,0,g),B.i,g,g,new A.t(B.U,g,g,i,g,g,B.m),g,g,g,g,new A.x(0,13,0,13),g,g,g),B.x,!1,g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,new A.bbV(h,a),g,g,g,g,g,g,!1,B.a4),1)],k))}if(q){i=A.l(12)
+B.e.G(j,A.a([A.V(A.bP(g,A.m(g,A.F(A.a([A.L(B.aj4,B.b,g,17),new A.y(8,g,g,g),A.d("Penjadwalan",g,g,g,g,g,A.e(g,g,B.b,g,g,g,g,g,g,g,g,13,g,g,B.r,g,g,!0,g,g,g,g,g,g,g,g),g,g,g)],k),B.h,B.A,B.c,0,g),B.i,g,g,new A.t(B.ke,g,g,i,g,g,B.m),g,g,g,g,new A.x(0,13,0,13),g,g,g),B.x,!1,g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,new A.bbW(h,a),g,g,g,g,g,g,!1,B.a4),1)],k))}if(o){i=A.l(12)
+B.e.G(j,A.a([A.V(A.bP(g,A.m(g,A.F(A.a([A.L(B.ajp,B.b,g,17),new A.y(8,g,g,g),A.d("Mulai Kerja",g,g,g,g,g,A.e(g,g,B.b,g,g,g,g,g,g,g,g,13,g,g,B.r,g,g,!0,g,g,g,g,g,g,g,g),g,g,g)],k),B.h,B.A,B.c,0,g),B.i,g,g,new A.t(B.aO,g,g,i,g,g,B.m),g,g,g,g,new A.x(0,13,0,13),g,g,g),B.x,!1,g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,new A.bbX(h,a),g,g,g,g,g,g,!1,B.a4),1)],k))}if(n){i=A.l(12)
 B.e.G(j,A.a([A.V(A.bP(g,A.m(g,A.F(A.a([A.L(B.aj6,B.b,g,17),new A.y(8,g,g,g),A.d("Selesai Kerja",g,g,g,g,g,A.e(g,g,B.b,g,g,g,g,g,g,g,g,13,g,g,B.r,g,g,!0,g,g,g,g,g,g,g,g),g,g,g)],k),B.h,B.A,B.c,0,g),B.i,g,g,new A.t(B.wD,g,g,i,g,g,B.m),g,g,g,g,new A.x(0,13,0,13),g,g,g),B.x,!1,g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,new A.bbY(h,a),g,g,g,g,g,g,!1,B.a4),1)],k))}if(m){i=A.l(12)
 B.e.G(j,A.a([A.V(A.bP(g,A.m(g,A.F(A.a([A.L(B.aj1,B.b,g,17),new A.y(8,g,g,g),A.d("Buat Laporan",g,g,g,g,g,A.e(g,g,B.b,g,g,g,g,g,g,g,g,13,g,g,B.r,g,g,!0,g,g,g,g,g,g,g,g),g,g,g)],k),B.h,B.A,B.c,0,g),B.i,g,g,new A.t(B.oy,g,g,i,g,g,B.m),g,g,g,g,new A.x(0,13,0,13),g,g,g),B.x,!1,g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,new A.bbZ(h,a),g,g,g,g,g,g,!1,B.a4),1)],k))}if(l){i=A.l(12)
-B.e.G(j,A.a([A.V(A.bP(g,A.m(g,A.F(A.a([A.L(B.Ha,B.b,g,17),new A.y(8,g,g,g),A.d("Verifikasi Selesai",g,g,g,g,g,A.e(g,g,B.b,g,g,g,g,g,g,g,g,13,g,g,B.r,g,g,!0,g,g,g,g,g,g,g,g),g,g,g)],k),B.h,B.A,B.c,0,g),B.i,g,g,new A.t(B.i0,g,g,i,g,g,B.m),g,g,g,g,new A.x(0,13,0,13),g,g,g),B.x,!1,g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,new A.bbR(h,a),g,g,g,g,g,g,!1,B.a4),1)],k))}return A.m(g,A.F(j,B.h,B.d,B.c,0,g),B.i,g,g,new A.t(B.H,g,new A.dS(new A.aO(e,0.8,B.t,-1),B.v,B.v,B.v),g,n,g,B.m),g,g,g,g,new A.x(12,8,12,8+f.r.d),g,g,g)},
+B.e.G(j,A.a([A.V(A.bP(g,A.m(g,A.F(A.a([A.L(B.Ha,B.b,g,17),new A.y(8,g,g,g),A.d("Verifikasi Selesai",g,g,g,g,g,A.e(g,g,B.b,g,g,g,g,g,g,g,g,13,g,g,B.r,g,g,!0,g,g,g,g,g,g,g,g),g,g,g)],k),B.h,B.A,B.c,0,g),B.i,g,g,new A.t(B.i0,g,g,i,g,g,B.m),g,g,g,g,new A.x(0,13,0,13),g,g,g),B.x,!1,g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,g,new A.bbR(h,a),g,g,g,g,g,g,!1,B.a4),1)],k))}return A.m(g,A.F(j,B.h,B.d,B.c,0,g),B.i,g,g,new A.t(B.H,g,new A.dS(new A.aO(e,0.8,B.t,-1),B.v,B.v,B.v),g,p,g,B.m),g,g,g,g,new A.x(12,8,12,8+f.r.d),g,g,g)},
 p8(a){var s=null
 return A.d(a,s,s,s,s,s,A.e(s,s,B.aZ,s,s,s,s,s,s,s,s,10,s,s,B.y,s,s,!0,s,0.3,s,s,s,s,s,s),s,s,s)},
 Eg(a,b,c){var s=null,r=4293455592,q=A.e(s,s,A.k(4279900698),s,s,s,s,s,s,s,s,13,s,s,B.y,s,s,!0,s,s,s,s,s,s,s,s),p=A.e(s,s,B.aS,s,s,s,s,s,s,s,s,13,s,s,B.aa,s,s,!0,s,s,s,s,s,s,s,s),o=A.k(4294244340)
@@ -131969,15 +131971,15 @@ j=t.z
 s=8
 return A.i(n.f.ak("https://herbaemas.com/jo/eng/api/daftar-jo/tolak",A.p(["id_jo",n.a.c,"status",99,"ket_tolak",B.l.aK(n.ch.a.a)],k,t.K),A.an(null,A.p(["Authorization","Bearer "+m],k,j),null),j),$async$ER)
 case 8:l=c
-if(l.c===200){A.cI("Job Order berhasil ditolak.")
+if(l.c===200){A.cI("Job Order berhasil dibatalkan.")
 n.kc()}else{k=l.a
 k=k==null?null:J.f(k,"error")
-A.aw(k==null?"Gagal menolak Job Order, silahkan coba lagi.":k)}p=2
+A.aw(k==null?"Gagal membatalkan Job Order, silahkan coba lagi.":k)}p=2
 s=6
 break
 case 4:p=3
 h=o.pop()
-A.aw("Terjadi kesalahan sistem saat menolak Job Order.")
+A.aw("Terjadi kesalahan sistem saat membatalkan Job Order.")
 s=6
 break
 case 3:s=2
@@ -132469,9 +132471,9 @@ o=this.b
 n=t.p
 p=A.F(A.a([A.m(k,A.L(B.ly,B.u,k,17),B.i,k,k,new A.t(q,k,k,p,k,k,B.m),k,32,k,k,k,k,k,32),new A.y(10,k,k,k),A.q(A.a([A.d("Alasan Penolakan Job Order",k,k,k,k,k,A.e(k,k,A.k(4279900698),k,k,k,k,k,k,k,k,14,k,k,B.cc,k,k,!0,k,k,k,k,k,k,k,k),k,k,k),A.d(o.a,k,k,k,k,k,A.e(k,k,B.aZ,k,k,k,k,k,k,k,k,11,k,k,k,k,k,!0,k,k,k,k,k,k,k,k),k,k,k)],n),B.o,B.d,B.c,B.k)],n),B.h,B.d,B.c,0,k)
 q=j.p8("ALASAN PENOLAKAN")
-m=j.Eg(j.ch,"Alasan Job Order ditolak",3)
+m=j.Eg(j.ch,"Alasan Job Order dibatalkan",3)
 l=A.l(12)
-return new A.P(new A.x(0,0,0,i.f.d),A.m(k,A.q(A.a([r,new A.y(k,16,k,k),p,new A.y(k,20,k,k),q,new A.y(k,4,k,k),m,new A.y(k,20,k,k),new A.y(1/0,k,A.bP(k,A.m(k,A.F(A.a([A.L(B.h1,B.b,k,17),new A.y(8,k,k,k),A.d("Tolak Job Order",k,k,k,k,k,A.e(k,k,B.b,k,k,k,k,k,k,k,k,13,k,k,B.r,k,k,!0,k,k,k,k,k,k,k,k),k,k,k)],n),B.h,B.A,B.c,0,k),B.i,k,k,new A.t(B.U,k,k,l,k,k,B.m),k,k,k,k,new A.x(0,12,0,12),k,k,k),B.x,!1,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,new A.bd1(j,o),k,k,k,k,k,k,!1,B.a4),k)],n),B.o,B.d,B.G,B.k),B.i,k,k,new A.t(B.b,k,k,s,k,k,B.m),k,k,k,k,new A.x(12,12,12,20),k,k,k),k)},
+return new A.P(new A.x(0,0,0,i.f.d),A.m(k,A.q(A.a([r,new A.y(k,16,k,k),p,new A.y(k,20,k,k),q,new A.y(k,4,k,k),m,new A.y(k,20,k,k),new A.y(1/0,k,A.bP(k,A.m(k,A.F(A.a([A.L(B.h1,B.b,k,17),new A.y(8,k,k,k),A.d("Batalkan Job Order",k,k,k,k,k,A.e(k,k,B.b,k,k,k,k,k,k,k,k,13,k,k,B.r,k,k,!0,k,k,k,k,k,k,k,k),k,k,k)],n),B.h,B.A,B.c,0,k),B.i,k,k,new A.t(B.U,k,k,l,k,k,B.m),k,k,k,k,new A.x(0,12,0,12),k,k,k),B.x,!1,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,new A.bd1(j,o),k,k,k,k,k,k,!1,B.a4),k)],n),B.o,B.d,B.G,B.k),B.i,k,k,new A.t(B.b,k,k,s,k,k,B.m),k,k,k,k,new A.x(12,12,12,20),k,k,k),k)},
 $S:182}
 A.bd1.prototype={
 $0(){var s,r=null,q=this.a,p=q.c
@@ -132480,7 +132482,7 @@ A.a1(p,!1).a1(r)
 p=q.c
 p.toString
 s=A.e(r,r,B.b,r,r,r,r,r,r,r,r,12,r,r,B.r,r,r,!0,r,r,r,r,r,r,r,r)
-A.bu(!0,"Batal",A.e(r,r,B.z,r,r,r,r,r,r,r,r,12,r,r,B.n,r,r,!0,r,r,r,r,r,r,r,r),B.U,"Ya, Tolak",s,p,r,new A.bd0(q,this.b),!1,"Apakah Anda yakin ingin menolak Job Order ini?","Konfirmasi Penolakan",B.bt)},
+A.bu(!0,"Batal",A.e(r,r,B.z,r,r,r,r,r,r,r,r,12,r,r,B.n,r,r,!0,r,r,r,r,r,r,r,r),B.U,"Ya, Batalkan",s,p,r,new A.bd0(q,this.b),!1,"Apakah Anda yakin ingin membatalkan Job Order ini?","Konfirmasi Pembatalan",B.bt)},
 $S:0}
 A.bd0.prototype={
 $0(){var s=this.a,r=s.c
@@ -133453,7 +133455,7 @@ this.ex()}}
 A.wx.prototype={}
 A.Tn.prototype={
 N(){var s=t.xX,r=t.N,q=t.s
-return new A.a_7(A.k(4279587127),A.k(4293914607),A.be(null),A.a([],s),A.a([],s),A.X(r,t.GU),A.X(r,r),A.a(["Semua Bulan","Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember"],q),A.a(["Semua Tahun",B.f.k(A.b8(new A.b_(Date.now(),0,!1))),B.f.k(A.b8(new A.b_(Date.now(),0,!1))-1)],q),A.a(["Semua Status","Dibuat","Diajukan","Dalam Antrian","Pelaksanaan","Verifikasi User","Selesai","Ditolak"],q),null,null)}}
+return new A.a_7(A.k(4279587127),A.k(4293914607),A.be(null),A.a([],s),A.a([],s),A.X(r,t.GU),A.X(r,r),A.a(["Semua Bulan","Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember"],q),A.a(["Semua Tahun",B.f.k(A.b8(new A.b_(Date.now(),0,!1))),B.f.k(A.b8(new A.b_(Date.now(),0,!1))-1)],q),A.a(["Semua Status","Dibuat","Diajukan","Dalam Antrian","Pelaksanaan","Verifikasi User","Selesai","Dibatalkan"],q),null,null)}}
 A.a_7.prototype={
 ae8(a){var s=A.cH(a,null)
 switch(s==null?-1:s){case 0:return"Dibuat"
@@ -133462,7 +133464,7 @@ case 2:return"Dalam Antrian"
 case 3:return"Pelaksanaan"
 case 4:return"Verifikasi User"
 case 5:return"Selesai"
-case 99:return"Ditolak"
+case 99:return"Dibatalkan"
 default:return a}},
 jh(a){switch(a){case"0":return B.aO
 case"1":return B.ox
