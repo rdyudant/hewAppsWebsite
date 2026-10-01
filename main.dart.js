@@ -156295,7 +156295,7 @@ if(i==null||i.length===0){A.aj("Data lokasi P3K tidak valid.")
 n=[1]
 s=5
 break}m.l(new A.caz(m,i,j))
-A.c2("Lokasi P3K: "+A.k(J.e(j,"nama")))
+A.c2("Berhasil memilih Lokasi P3K : "+A.k(J.e(j,"nama")))
 n.push(6)
 s=5
 break
